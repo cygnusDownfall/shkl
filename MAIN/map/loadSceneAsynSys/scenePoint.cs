@@ -5,7 +5,7 @@ public class scenePoint : MonoBehaviour
 {
     public Scene[] sceneAdded;
     public Scene[] sceneRemoved;
-    byte playerInArea = 0;
+    byte playerFilter = 0;
 
     void loadScene(Scene[] scene)
     {
@@ -26,15 +26,15 @@ public class scenePoint : MonoBehaviour
     void OnTriggerEnter(Collider collider)
     {
         if (!collider.TryGetComponent(out playerInfo player)) { return; }
-        playerInArea++;
+        playerFilter++;
         loadScene(sceneAdded);
         
     }
     void OnTriggerExit(Collider collider)
     {
         if (!collider.TryGetComponent(out playerInfo player)) { return; }
-        playerInArea--;
-        if (playerInArea >0) return;
+        playerFilter--;
+        if (playerFilter >0) return;
         removeScene(sceneRemoved);
     }
 }

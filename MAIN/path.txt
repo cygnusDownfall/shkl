@@ -3,3 +3,4 @@ E:\unity project\Card battle realtime\Assets\MAIN\card
 E:\unity project\Card battle realtime\Assets\MAIN\effect
 E:\unity project\Card battle realtime\Assets\MAIN\saveload
 E:\unity project\Card battle realtime\Assets\MAIN\map\mapcomponent
+E:\unity project\Card battle realtime\Assets\MAIN\network

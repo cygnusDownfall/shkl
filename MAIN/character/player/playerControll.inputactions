@@ -2,7 +2,7 @@
     "name": "playerControll",
     "maps": [
         {
-            "name": "move",
+            "name": "gameplay",
             "id": "a6951095-43a7-47a8-b3cf-fac36e3e297b",
             "actions": [
                 {
@@ -27,6 +27,15 @@
                     "name": "moveTab",
                     "type": "Value",
                     "id": "15cd0450-ea16-44ed-bbb0-f79be930aacc",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "look",
+                    "type": "Value",
+                    "id": "3b200969-f038-4494-bbba-95bdbfe89728",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -185,6 +194,28 @@
                     "processors": "",
                     "groups": "android",
                     "action": "moveTab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "70615ce1-ed4c-4808-9c06-07deb60b75ce",
+                    "path": "<Touchscreen>/touch0/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "android",
+                    "action": "look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "39fc7809-8ee8-4bad-bd87-f0b235dae6b2",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard&mouse",
+                    "action": "look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
